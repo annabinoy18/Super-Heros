@@ -1,0 +1,132 @@
+/* Basic Body Styling */
+body {
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    color: #333;
+    background: linear-gradient(to right, #e298c2, #f3d3e7);
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper Styling */
+.wrapper {
+    background-color: #faeaf4;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    color: #792c67;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0 0 1.5em;
+    line-height: 1.4;
+}
+
+/* Search Area Styling */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.search input {
+    padding: 0.5em;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid #2c2a52;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.search button {
+    background-color: #693b5b;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.3em;
+    width: 80%;
+    max-width: 300px;
+}
+
+.search button:hover {
+    background-color: #4b4a75;
+}
+
+/* Hero Image and Info Styling */
+#heroImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+#heroImage img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #2c2a52;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#heroImage h2 {
+    font-size: 2em;
+    color: #2c2a52;
+    margin: 0.5em 0;
+}
+
+#heroImage p {
+    font-size: 1em;
+    color: #333;
+    background-color: #a36585;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #heroImage img {
+        max-width: 80%;
+    }
+}
